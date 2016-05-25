@@ -110,9 +110,31 @@ if (username == "Scott" && password == "GoodMan")
 }
 
 
+//Loop
+//for loop (unfortunately, can't change the increasement)
+for i in 0 ..< 10
+{
+    print(i);
+}
 
+for i in arr {
+    print(i)
+}
 
+for (index, value) in arr2.enumerate()
+{
+    arr2[index] = value + 1;
+}
+print(arr2)
 
+//While loop
+var j = 0
+
+while (j < 10)
+{
+    print(j*5+5);
+    j+=1;
+}
 
 
 
