@@ -14,30 +14,25 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Finding Prime Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dz-oj-zkV">
-                                <rect key="frame" x="20" y="77" width="335" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" red="0.074049882590000005" green="0.81027263400000005" blue="0.59112852810000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="highlightedColor" red="0.74828261139999996" green="0.96709507699999997" blue="0.020404268060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="shadowColor" red="0.083426021040000006" green="0.74934059379999995" blue="0.74938422439999997" alpha="0.16666666669999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="shadowOffset" width="-2" height="-3"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Input a Number and find out whether it is a prime number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hj-Pp-Hm7">
-                                <rect key="frame" x="20" y="201" width="335" height="55"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input a Number and find out whether it is a prime number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hj-Pp-Hm7">
+                                <rect key="frame" x="150" y="115" width="300" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Vxd-GU-UtM"/>
+                                    <constraint firstAttribute="width" constant="300" id="pYz-Yf-TOM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tv1-g0-DgD">
-                                <rect key="frame" x="99" y="274" width="176" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAN-Xs-9e3">
-                                <rect key="frame" x="138" y="347" width="99" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAN-Xs-9e3">
+                                <rect key="frame" x="251" y="230" width="99" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="Std-nT-DQR"/>
+                                    <constraint firstAttribute="height" constant="30" id="oLP-pX-Ram"/>
+                                </constraints>
                                 <state key="normal" title="Test Prime!">
                                     <color key="titleShadowColor" red="0.03269195557" green="0.94937127830000001" blue="0.61357235909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -45,16 +40,52 @@
                                     <action selector="testPrime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTS-xr-Kdk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAd-2F-eQF">
-                                <rect key="frame" x="20" y="385" width="335" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAd-2F-eQF">
+                                <rect key="frame" x="133" y="280" width="335" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="04X-Hl-SeF"/>
+                                    <constraint firstAttribute="width" constant="335" id="88G-qM-y9O"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finding Prime Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dz-oj-zkV">
+                                <rect key="frame" x="148" y="50" width="304" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="cil-RF-kH1"/>
+                                    <constraint firstAttribute="height" constant="35" id="u9D-fk-Las"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.074049882590000005" green="0.81027263400000005" blue="0.59112852810000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.74828261139999996" green="0.96709507699999997" blue="0.020404268060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.083426021040000006" green="0.74934059379999995" blue="0.74938422439999997" alpha="0.16666666669999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-2" height="-3"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tv1-g0-DgD">
+                                <rect key="frame" x="212" y="180" width="176" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="176" id="0ZC-fU-ilG"/>
+                                    <constraint firstAttribute="height" constant="30" id="xsB-kv-t5B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tv1-g0-DgD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BRQ-47-503"/>
+                            <constraint firstItem="7hj-Pp-Hm7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DCw-7U-XGm"/>
+                            <constraint firstItem="dAd-2F-eQF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ISv-xc-yEw"/>
+                            <constraint firstItem="1dz-oj-zkV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="IdC-qO-1KU"/>
+                            <constraint firstItem="mAN-Xs-9e3" firstAttribute="top" secondItem="tv1-g0-DgD" secondAttribute="bottom" constant="20" id="caj-0i-jH3"/>
+                            <constraint firstItem="7hj-Pp-Hm7" firstAttribute="top" secondItem="1dz-oj-zkV" secondAttribute="bottom" constant="30" id="eBM-fv-zEv"/>
+                            <constraint firstItem="tv1-g0-DgD" firstAttribute="top" secondItem="7hj-Pp-Hm7" secondAttribute="bottom" constant="10" id="f7e-Dp-Elv"/>
+                            <constraint firstItem="1dz-oj-zkV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gPG-dp-jDD"/>
+                            <constraint firstItem="mAN-Xs-9e3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h8i-tk-TwA"/>
+                            <constraint firstItem="dAd-2F-eQF" firstAttribute="top" secondItem="mAN-Xs-9e3" secondAttribute="bottom" constant="20" id="kL2-V0-Sh4"/>
+                        </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="inputNumber" destination="tv1-g0-DgD" id="Ek5-65-FxY"/>
                         <outlet property="result" destination="dAd-2F-eQF" id="OPR-eR-n97"/>
@@ -62,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="411.5" y="466.5"/>
+            <point key="canvasLocation" x="571" y="428"/>
         </scene>
     </scenes>
 </document>

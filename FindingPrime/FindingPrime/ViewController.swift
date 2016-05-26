@@ -13,19 +13,20 @@ class ViewController: UIViewController {
     @IBOutlet var inputNumber: UITextField!
     @IBOutlet var result: UILabel!
     @IBAction func testPrime(sender: AnyObject) {
-        if (inputNumber.text=="")
-        {
+        if let input = Int(inputNumber.text!) {
+            let r = isPrime(input);
+            if ( r == 0)
+            {
+                result.text = "This is a prime number!";
+            } else {
+                result.text = "\(inputNumber.text!) can be devided by \(r)"
+            }
+        dismissKeyboard();
+        } else {
             result.text = "Please put a number!";
             return;
         }
-        let r = isPrime(Int(inputNumber.text!)!);
-        if ( r == 0)
-        {
-            result.text = "This is a prime number!";
-        } else {
-            result.text = "\(inputNumber.text!) can be devided by \(r)"
-        }
-        dismissKeyboard();
+        
     }
     
     func isPrime(num:Int) -> Int {
